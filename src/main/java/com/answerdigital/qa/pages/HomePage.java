@@ -8,7 +8,6 @@ import org.openqa.selenium.support.PageFactory;
 
 public class HomePage extends TestBase{
 	
-	
 	@FindBy(xpath="//a[contains(@class, 'logolink')]")
 	WebElement AnswerLogo;
 	
@@ -73,31 +72,35 @@ public class HomePage extends TestBase{
     }
      public CareersPage ClickOnCareersLink() {
     	 
-    	 CareerTab.click();
-    	 return new CareersPage();
+    	      CareerTab.click();
+    	      return new CareersPage();
      }  
     
     public AcademyPage ClickOnAcademyLink() {
-    	  AcademyTab.click();
-    	  return new AcademyPage();
+    	     
+	    AcademyTab.click();
+    	    return new AcademyPage();
     	
     }   
     
     public AboutUsPage ClickOnAboutUsLink() {
-    	 AboutUsTab.click();
-    	 return new AboutUsPage();
+    	 
+	    AboutUsTab.click();
+    	    return new AboutUsPage();
     	
     }
     
     public InsightPage ClickOnInsightLink() {
-    	InsightsTab.click();
-    	return new InsightPage();
+    	    
+	    InsightsTab.click();
+    	    return new InsightPage();
     	
     }
         
     public ContactUsPage ClickOnContactsUsLink() {
-    	ContactUsTab.click();
-    	return new ContactUsPage();
+    	   
+	    ContactUsTab.click();
+    	    return new ContactUsPage();
     	
     }  
 	
