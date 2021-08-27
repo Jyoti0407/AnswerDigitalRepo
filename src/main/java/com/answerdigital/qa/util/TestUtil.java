@@ -3,25 +3,18 @@ package com.answerdigital.qa.util;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class TestUtil {
-
-
 	
 	public static long PAGE_LOAD_TIMEOUT= 20;
 	public static long IMPLICIT_WAIT= 10;
-	
 	public static String TESTDATA_SHEET_PATH="C:\\Users\\jyoti\\eclipse-workspaceNew\\AnswerDigitalTest\\src\\main\\java\\com\\answerdigital\\qa\\testdata\\AnswerDigitalTestData.xlsx";
-	
 	static Workbook book;
 	static Sheet sheet; 
-	
-	
 	
 	public static Object[][] getTestData(String sheetName) throws Throwable{
 		FileInputStream file= null;
