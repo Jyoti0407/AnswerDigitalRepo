@@ -4,7 +4,6 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -13,7 +12,6 @@ public class TestBase {
 	
 	public static WebDriver driver;
 	public static Properties prop;
-	
 	
 	public TestBase() {  
 		
@@ -26,9 +24,7 @@ public class TestBase {
 		}catch(IOException e) {
 			e.printStackTrace();
 		}
-		
 	}
-	
 	public static void initialization() throws Throwable
 	{
 		String browserName=prop.getProperty("browser");
@@ -47,5 +43,4 @@ public class TestBase {
 		driver.get(prop.getProperty("url")); 
 		Thread.sleep(4000);
 	}
-
 }
