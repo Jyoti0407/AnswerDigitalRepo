@@ -1,7 +1,6 @@
 package com.answerdigital.qa.pages;
 
 import com.answerdigital.qa.base.TestBase;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -10,18 +9,14 @@ import org.openqa.selenium.support.PageFactory;
 public class HomePage extends TestBase{
 	
 	
-	//Defining Page Factory
-	
 	@FindBy(xpath="//a[contains(@class, 'logolink')]")
 	WebElement AnswerLogo;
-	
 	
 	@FindBy(xpath="//*[@id=\"t3-mainnav\"]/div/div[3]/div/ul/li[1]/a")
 	WebElement OurServiceTab;
 	
 	@FindBy(xpath="//*[@id=\"t3-mainnav\"]/div/div[3]/div/ul/li[2]/a")
 	WebElement OurWorkTab;
-	
 	
 	@FindBy(xpath="//*[@id=\"t3-mainnav\"]/div/div[3]/div/ul/li[3]/a")
 	WebElement CareerTab;
@@ -38,13 +33,10 @@ public class HomePage extends TestBase{
 	@FindBy(xpath="//*[@id=\"t3-mainnav\"]/div/div[3]/div/ul/li[7]/a")
 	WebElement ContactUsTab;
 	
-	
-	
 	//Initialising the page object:
 	
 	public HomePage() {
 		
-					
 			PageFactory.initElements(driver,this);
 			
 	}
@@ -60,8 +52,7 @@ public class HomePage extends TestBase{
 		
 		return AnswerLogo.isDisplayed();
 		
-	}
-	
+	}	
 	
     public boolean validateOurServiceImage() {
 		
@@ -70,34 +61,31 @@ public class HomePage extends TestBase{
 	}
     
     public OurServicesPage ClickOnOurServicesLink() {
-    	OurServiceTab.click();
-    	return new OurServicesPage();
+    	       OurServiceTab.click();
+    	       return new OurServicesPage();
     	
-    }
-    
+    }  
     
     public OurWorkPage ClickOnOurWorkLink() {
-    	OurWorkTab.click();
-    	return new OurWorkPage();
+    	      OurWorkTab.click();
+    	      return new OurWorkPage();
     	
     }
      public CareersPage ClickOnCareersLink() {
     	 
     	 CareerTab.click();
     	 return new CareersPage();
-     }
-    
+     }  
     
     public AcademyPage ClickOnAcademyLink() {
-    	AcademyTab.click();
-    	return new AcademyPage();
+    	  AcademyTab.click();
+    	  return new AcademyPage();
     	
-    }
-    
+    }   
     
     public AboutUsPage ClickOnAboutUsLink() {
-    	AboutUsTab.click();
-    	return new AboutUsPage();
+    	 AboutUsTab.click();
+    	 return new AboutUsPage();
     	
     }
     
@@ -111,11 +99,8 @@ public class HomePage extends TestBase{
     	ContactUsTab.click();
     	return new ContactUsPage();
     	
-    }
-    
-   
+    }  
 	
-	
-	}
+}
 	
 	
