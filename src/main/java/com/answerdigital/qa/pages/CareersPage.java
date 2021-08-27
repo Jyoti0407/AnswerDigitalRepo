@@ -5,7 +5,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
-
 import com.answerdigital.qa.base.TestBase;
 
 
@@ -31,11 +30,9 @@ public class CareersPage extends TestBase{
 	WebElement ApplyBtn;
 
 	public CareersPage() {
-		PageFactory.initElements(driver,this);
 		
-}
-	
-//Belows are the actions
+		PageFactory.initElements(driver,this);		
+	}
 	
 public String validateCareersPageTitle() {
 	
