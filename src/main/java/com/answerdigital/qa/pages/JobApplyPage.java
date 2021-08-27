@@ -4,11 +4,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
-
 import com.answerdigital.qa.base.TestBase;
 
 public class JobApplyPage extends TestBase {
-	
 	
 	@FindBy(id="ApplicantTitle")
 	WebElement title;
@@ -18,7 +16,6 @@ public class JobApplyPage extends TestBase {
 	
 	@FindBy(id="ApplicantSurname")
 	WebElement lastname;
-	
 	
 	@FindBy(id="ApplicantEmail")
 	WebElement email;
