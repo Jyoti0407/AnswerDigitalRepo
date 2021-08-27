@@ -15,9 +15,7 @@ public class TestBase {
 	public static Properties prop;
 	
 	
-	
-	
-	public TestBase() {   //Inside base class constructor we reading the properties
+	public TestBase() {  
 		
 		try {
 			prop =new Properties();
@@ -46,9 +44,6 @@ public class TestBase {
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		Thread.sleep(4000);
-		//driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT,TimeUnit.SECONDS);
-	   // driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT,TimeUnit.SECONDS);
-		
 		driver.get(prop.getProperty("url")); 
 		Thread.sleep(4000);
 	}
